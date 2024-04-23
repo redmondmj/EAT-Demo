@@ -20,7 +20,7 @@ If needed run the [Setup](setup.md)
 * [Google Dorking](https://github.com/chr3st5an/Google-Dorking) Demo
     1. `allintext: "DVWA" "username" "password"`
     2. `allintext:"DVWA" filetype:pdf`
-    3. 
+    3. `allintext: "password" "1234" filetype:csv`
 * Identify a Target
   * We'll just create our own!
     * `docker run --rm -it -p 80:80 vulnerables/web-dvwa`
