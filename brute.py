@@ -179,11 +179,11 @@ if __name__ == "__main__":
     """
     print(message, end = '\n')
 
-    sleep(2)
+    sleep(3)
 
     userToken, sessionID =  getLoginTokenFromDVWA()
     loginToDVWA(userToken, sessionID)
 
-    sleep(2)
+    sleep(3)
 
     tryAccountLogin(targetUserID, sessionID)

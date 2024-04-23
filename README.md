@@ -60,5 +60,12 @@ If needed run the [Setup](setup.md)
 * Set up a variable
 * Load some data
 * Add some Guardrails!
-* Test your bot!
+* Build your own! We Need:
+  1. Some data.
+  2. A custom greeting!
+  3. A Question?
+
+### Try Our Bot!
+[EAT Demo Bot](https://mediafiles.botpress.cloud/b9264ebf-53a7-4eea-a507-06b0dabf1ad1/webchat/bot.html)
+
 
